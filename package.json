@@ -1,0 +1,28 @@
+{
+  "name": "videosite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRickestRick/VideoSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRickestRick/VideoSite/issues"
+  },
+  "homepage": "https://github.com/TheRickestRick/VideoSite#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "method-override": "^2.3.10",
+    "pg": "^7.4.1"
+  }
+}
