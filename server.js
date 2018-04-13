@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 const methodOverride = require('method-override');
 
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -12,6 +13,9 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 app.use(express.static(__dirname+"/public"));
 
+const auth = require('./routes/auth');
+
+app.use('/auth', auth);
 
 app.get('/', (req, res)=>{
   res.render('index')
