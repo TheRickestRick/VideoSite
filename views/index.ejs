@@ -24,7 +24,10 @@
 
     <div class="main">
       <div class="main-content">
+        <% for(video of videos){%>
+        <iframe class="player" src="<%=video.src%>"><%=video.name%></iframe>
 
+        <%}%>
       </div>
 
     </div>

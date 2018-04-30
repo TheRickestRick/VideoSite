@@ -18,7 +18,10 @@ const auth = require('./routes/auth');
 app.use('/auth', auth);
 
 app.get('/', (req, res)=>{
-  res.render('index')
+  knex('videos')
+  .then(function(videos){
+    res.render('index', {videos})
+  })
 });
 
 
