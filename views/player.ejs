@@ -24,10 +24,8 @@
 
     <div class="main">
       <div class="main-content">
-        <% for(video of videos){%>
-        <a href='/player/<%=video.id%>'><image class="player" src="http://img.youtube.com/vi/<%=video.src%>/hqdefault.jpg"></image></a>
+        <iframe class="singleVideo" src="https://www.youtube.com/embed/<%=video.src%>" allowfullscreen></iframe>
 
-        <%}%>
       </div>
 
     </div>

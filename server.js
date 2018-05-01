@@ -14,8 +14,10 @@ app.use(methodOverride('_method'));
 app.use(express.static(__dirname+"/public"));
 
 const auth = require('./routes/auth');
+const player = require('./routes/player');
 
 app.use('/auth', auth);
+app.use('/player', player);
 
 app.get('/', (req, res)=>{
   knex('videos')

@@ -85,3 +85,16 @@ body {
   background-color: lightgray;
   border: 2px solid gainsboro;
 }
+
+.player:hover{
+  opacity: 0.5;
+}
+
+.singleVideo{
+  padding:10px;
+  margin-left:6%;
+  margin-top:2%;
+  height:600px;
+  width:1200px;
+
+}
